@@ -368,7 +368,7 @@ if results and results['status'] == 'Optimal':
         costs.append(0)
         profits.append(0)
 
-    fig, ax1 = plt.subplots(figsize=(10, 5))
+    fig, ax1 = plt.subplots(figsize=(8, 5))
     ax1.plot(
         store_limits,
         profits,
