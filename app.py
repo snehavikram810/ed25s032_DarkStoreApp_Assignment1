@@ -368,7 +368,7 @@ if results and results['status'] == 'Optimal':
         costs.append(0)
         profits.append(0)
 
-    fig, ax1 = plt.subplots(figsize=(8, 5))
+    fig, ax1 = plt.subplots(figsize=(8, 3))
     ax1.plot(
         store_limits,
         profits,
@@ -379,11 +379,11 @@ if results and results['status'] == 'Optimal':
     )
     ax1.set_title(
         'Total Profit vs. Maximum Allowed Open Dark Stores',
-        fontsize=12,
+        fontsize=10,
         weight='bold',
     )
-    ax1.set_xlabel('Max Allowed Open Dark Stores', fontsize=10)
-    ax1.set_ylabel('Net Profit (₹)', fontsize=10, color='forestgreen')
+    ax1.set_xlabel('Max Allowed Open Dark Stores', fontsize=8)
+    ax1.set_ylabel('Net Profit (₹)', fontsize=8, color='forestgreen')
     ax1.grid(True, linestyle='--', alpha=0.6)
 
     st.pyplot(fig)
